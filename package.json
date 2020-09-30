@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/abhi-node/TrexBot/issues"
   },
-  "homepage": "https://github.com/abhi-node/TrexBot#readme"
+  "homepage": "https://github.com/abhi-node/TrexBot#readme",
+  "dependencies": {
+    "discord.js": "12.3.1"
+  }
 }
