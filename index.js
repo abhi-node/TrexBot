@@ -19,8 +19,10 @@ client.on('ready', () => {
             message.channel.send('I am feeling happy today! :smiley:')
         } else if (randomFloat > 0.2) {
             message.channel.send('I am feeling ok :neutral_face:')
-        } else {
+        } else if (randomFloat > 0.01) {
             message.channel.send('I am feeling sad :frowning2:')
+        } else {
+            message.channel.send('I AM SO SADDDDD :sob::sob::sob:')
         }
     })
     command(client, '**cc', message => {
