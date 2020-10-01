@@ -46,11 +46,6 @@ client.on('ready', () => {
             message.channel.send(`${message.author} we aren't dating :rolling_eyes:`)
         }
     })
-    client.on('message', message => {
-        if (message.content.toLowerCase().includes('chris')) {
-            message.channel.send('FUCK CHRIS')
-        }
-    })
 
 })
 
