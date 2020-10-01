@@ -47,7 +47,7 @@ client.on('ready', () => {
         }
     })
     client.on('message', message => {
-        if (message.content.toLowerCase.includes('chris')) {
+        if (message.content.toLowerCase().includes('chris')) {
             message.channel.send('FUCK CHRIS')
         }
     })
