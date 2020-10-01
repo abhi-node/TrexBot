@@ -7,6 +7,13 @@ const random = require('random')
 client.on('ready', () => {
     console.log("The client is ready")
 
+    client.user.setPresence({
+        activity: {
+            name: 'waiting for Trex to start streaming!',
+            type: 0,
+        }
+    })
+
     command(client, ['hi', 'wassup'], message => {
         message.channel.send(`Hi ${message.author}`)
     })
