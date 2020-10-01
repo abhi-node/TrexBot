@@ -9,8 +9,8 @@ client.on('ready', () => {
 
     client.user.setPresence({
         activity: {
-            name: 'waiting for Trex to start streaming!',
-            type: 0,
+            name: 'Trex\'s stream',
+            type: 'WATCHING',
         }
     })
 
