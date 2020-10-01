@@ -40,10 +40,10 @@ client.on('ready', () => {
         }
     })
     command(client, ['bf','boyfriend'], message => {
-        if (message.member.presence.data.activity.name === 'dating TrexBot' && message.member.presence.data.activity.type == 4) {
-            message.channel.send(`${message.author} hi baby :smiling_face_with_3_hearts::smiling_face_with_3_hearts:`)
-        } else {
+        if (random.float(min=0,max=1) > 0.25) {
             message.channel.send(`${message.author} we aren't dating :rolling_eyes:`)
+        } else {
+            message.channel.send(`${message.author} hi baby :smiling_face_with_3_hearts::smiling_face_with_3_hearts:`)
         }
     })
 
