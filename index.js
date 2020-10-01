@@ -30,11 +30,6 @@ client.on('ready', () => {
             })
         }
     })
-    command(client, 'deletethis', message => {
-        message.channel.messages.fetch().then(results => {
-            message.channel.bulkDelete([results[results.length-1]])
-        })
-    })
 
 })
 
