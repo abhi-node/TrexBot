@@ -41,9 +41,9 @@ client.on('ready', () => {
     })
     command(client, ['bf','boyfriend'], message => {
         if (random.float(min=0,max=1) > 0.25) {
-            message.channel.send(`$(message.author) we aren't dating :rolling_eyes:`)
+            message.channel.send(`${message.author} we aren't dating :rolling_eyes:`)
         } else {
-            message.channel.send(`$(message.author) hi baby :smiling_face_with_3_hearts::smiling_face_with_3_hearts:`)
+            message.channel.send(`${message.author} hi baby :smiling_face_with_3_hearts::smiling_face_with_3_hearts:`)
         }
     })
 
