@@ -5,10 +5,12 @@ const command = require('./command')
 
 client.on('ready', () => {
     console.log("The client is ready")
+
+    command(client, 'hi', message => {
+        message.channel.send(`Hi ${message.author}`)
+    })
 })
 
-command(client, 'hi', message => {
-    message.channel.send(`Hi ${message.author}`)
-})
+
 
 client.login(config.token)
