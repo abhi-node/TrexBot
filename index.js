@@ -47,7 +47,7 @@ client.on('ready', () => {
         }
     })
     client.on('message', message => {
-        if (message.author.username === 'Collingswoodkm' && message.content.includes('deadly') && message.content.includes('sins')) {
+        if (message.content.includes('deadly') && message.content.includes('sins')) {
             message.channel.send('Seven deadly sins is my favorite anime!')
         }
     })
