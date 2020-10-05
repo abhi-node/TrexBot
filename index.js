@@ -47,8 +47,13 @@ client.on('ready', () => {
         }
     })
     client.on('message', message => {
-        if (message.content.includes('deadly') && message.content.includes('sins') && !(message.author.username === 'TrexBot')) {
-            message.channel.send('Seven deadly sins is my favorite anime!')
+        if (message.content.includes('cj')) {
+            message.channel.send(':cj::cj::cj::cj::cj::cj:')
+        }
+    })
+    client.on('message', message => {
+        if (message.author === 'rubysbrother') {
+            message.channel.send('on vendor')
         }
     })
 })
