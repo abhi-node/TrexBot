@@ -47,7 +47,7 @@ client.on('ready', () => {
         }
     })
     client.on('message', message => {
-        if (message.author === 'rubysbrother') {
+        if (message.author === '.rubysbrother') {
             message.channel.send('on vendor')
         }
     })
