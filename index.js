@@ -47,7 +47,7 @@ client.on('ready', () => {
         }
     })
     client.on('message', message => {
-        if (message.content.includes('cj')) {
+        if (message.content.includes('cj') && !(message.author === 'TrexBot')) {
             message.channel.send(':cj::cj::cj::cj::cj::cj:')
         }
     })
