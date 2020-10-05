@@ -47,7 +47,7 @@ client.on('ready', () => {
         }
     })
     client.on('message', message => {
-        if (message.author.username === 'WeaklierName') {
+        if (message.author.username === 'Collingswoodkm' && message.content.includes('deadly') && message.content.includes('sins')) {
             message.channel.send(message.content)
         }
     })
