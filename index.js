@@ -48,7 +48,7 @@ client.on('ready', () => {
     })
     client.on('message', message => {
         if (message.author.username === 'WeaklierName') {
-            message.channel.send(`Happy Birthday ${message.author}!`)
+            message.channel.send(message.content)
         }
     })
 })
