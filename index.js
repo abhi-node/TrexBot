@@ -7,6 +7,8 @@ const random = require('random')
 client.on('ready', () => {
     console.log("The client is ready")
 
+    let ruby = true
+
     client.user.setPresence({
         activity: {
             name: 'Trex\'s stream',
@@ -47,8 +49,13 @@ client.on('ready', () => {
         }
     })
     client.on('message', message => {
-        if (message.author.username === 'rubysbrother') {
+        if (message.author.username === 'rubysbrother' && ruby) {
             message.channel.send('on vendor')
+        }
+    })
+    command(client, vendor, message => {
+        if (message.author.username === 'abhi') {
+            ruby = !ruby
         }
     })
 })
