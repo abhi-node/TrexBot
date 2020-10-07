@@ -54,8 +54,10 @@ client.on('ready', () => {
         }
     })
     command(client, vendor, message => {
-        if (message.author.username === 'abhi') {
-            ruby = !ruby
+        if (message.author.username === 'abhi' && ruby) {
+            ruby = false
+        } else {
+            ruby = true
         }
     })
 })
